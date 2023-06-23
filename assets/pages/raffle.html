@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+    <title>Mindy Travel</title>
+</head>
+<body>
+    <header>   
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="./aboutUs.html">About Us</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./information.html">More information</a>
+            <a href="./benefitsTips.html">Benefits and Tips</a>
+            <a href="#">Raffle</a>
+        </nav>
+        <img src="../images/logo.png" alt="logo" class="logoImg">
+    </header>
+    <main>
+        <section>   
+            <div class="divTitles">
+                <h2>Raffle</h2>
+                <h3>You can collaborate and participate in a raffle for a 1-week trip</h3>
+            </div>  
+            <div class="divRaffle">
+                <article class="divIframe">
+                    <h4>To participate you must be from Toronto, Canada</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184551.90977180182!2d-79.54286926655811!3d43.71837095834632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20Ontario%2C%20Canad%C3%A1!5e0!3m2!1ses-419!2sar!4v1687404910561!5m2!1ses-419!2sar" width="600" height="450" style="border:3px solid #e6da76;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </article>
+                <form action="./show_data.html" method="get">
+                    <label for="firtNameUser">Firt name:</label>
+                    <input type="text" id="firtNameUser" name="firtName" placeholder="example:Roger">
+            
+                    <label for="lastNameUser">Last name:</label>
+                    <input type="text" id="lastNameUser" name="lastName">
+
+                    <label for="emailUser">Email:</label>
+                    <input type="email" id="emailUser" name="email" >
+
+                    <label for="countryUser">Choose country:</label>
+                    <select name="country" id="countryUser">
+                        <option value=" ">--select country--</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="peru">Peru</option>
+                        <option value="chile">Chile</option>
+                    </select>
+
+                    <label for="dateUser">Choose date:</label>
+                    <input type="date" id="dateUser" name="date" >
+
+                    <label for="paymentsOpt">Payments options:</label>
+                     <div class="divPay">
+                        
+                        <label for="cashUser" class="labelPay">Cash
+                            <input type="radio" id="cashUser" name="paymentType" value="cash">
+                        </label>
+                                           
+                                   
+                        <label for="creditCardUser" class="labelPay">Credit card 
+                            <input type="radio" id="creditCardUser" name="paymentType" value="creditCard">    
+                        </label>
+                                    
+                        
+                        <label for="debitCardUser" class="labelPay">Debit card
+                            <input type="radio" id="debitCardUser" name="paymentType" value="debitCard">
+                        </label>
+                    </div> 
+                        <label for="comentaryUser">Message (Optional)</label>
+                        <textarea name="comentary" id="comentaryUser" cols="30" rows="5"></textarea>                                       
+                    <div class="divTerm">                      
+                        <label for="termsCondition" class="labelPay">Accept term and conditions...
+                            <input type="checkbox" name="terms" id="termsCondition">
+                        </label>                    
+                        <input type="submit" value="  Send  ">
+                    </div>
+                </form>
+            </div>
+
+        </section>     
+    </main>
+    <footer>
+        <a href= "mailto:rogerllanos060412@gmail.com">Created by Roger Llanos</a>
+    </footer>
+</body>
+</html>

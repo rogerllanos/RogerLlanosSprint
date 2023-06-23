@@ -8,10 +8,13 @@
       background-image: url(../images/fondo.jpg);
   }
   header {
-      position: sticky;
-      top: 10px;
-      margin-bottom: 25px;
-      min-height: 10vh;
+    position: sticky;
+    top: 0.5rem;
+    min-height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1e5e7;
+    align-items: center;
   } 
   main {
       min-height: 75vh;
@@ -23,19 +26,16 @@
       align-items: center;
   }
 
-  .divNav {
+  h1 {
+    font-size: 35px;
+    color: rgb(48, 95, 197);
     display: flex;
-    justify-content: space-around;
- 
-  }
-.divTitles {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-  }
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+}
 h2 {
-   
+    margin-top: 2rem;
     font-family: system-ui;
     color: indianred;
     margin-bottom: 2rem;
@@ -43,43 +43,41 @@ h2 {
 h3 {
     font-family: sans-serif;
     color: darkgoldenrod;
+    margin-bottom: 3rem;
 }
+h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(158, 109, 34);
+    margin-bottom: 2rem;
+ }
+
   nav>a {
     color: rgb(204, 156, 98);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
     font-size: 20px;
-    margin: 15px;
+    margin-left: 2rem;
   }
   nav>a:hover {
     color: aqua;
     border-radius: 10px;
     background-color:rgb(189, 104, 104) ;
 }
-  .cajaLogo {
-      width: 49%;
-      display: inline-block;
+.logoImg {
+    height: 2rem;
+    margin-right: 1rem;
 }
-  .logoImg {
-      margin-left: 18rem;
-      width: 5rem;
-}
-h1 {
-    font-size: 35px;
-    color: rgb(48, 95, 197);
+.divTitles {
     display: flex;
-    justify-content: center;
-}
+    flex-direction: column;
+    align-items: center;
 
+}
 p {
     font-family: system-ui;
     color: currentColor;
 }
-a {
-    font-family: sans-serif;
-    text-decoration: none;
-    color: currentColor;
-}
+
 .sectionHome{
     display: flex;
     flex-direction: column;
@@ -122,7 +120,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 2rem;
+    margin-bottom: 2rem;
 
 }
 .aboutImg {
@@ -146,25 +144,31 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2rem;
 }
 .contactImg {
     width: 45rem;
     margin-bottom: 1rem;
+    border-radius: 10px;
 }
-.contactText {
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   color: rgb(158, 109, 34);
-}
+
 .divContact {
     display: flex;
     justify-content: space-around;
-    margin-top: 2rem;
 }
+a {
+    font-family: sans-serif;
+    font-family: system-ui;
+    text-decoration: none;
+    color: #23221d;
+    font-size: initial;
+    font-weight: 550;
+}
+
+ /* informatioStyle */
+
 .sectionTable {
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
 }
 th {
     color: rgb(180, 114, 66);
@@ -193,7 +197,7 @@ table,tr,th,td {
 
 /* benefitsTips style */
 
-ul>li  {
+ol>li  {
     list-style-type: disclosure-closed;
     width: 18rem;
     color: rgb(180, 114, 66);
@@ -201,13 +205,12 @@ ul>li  {
     font-weight: 600;
     
 }
-ol {
+ul {
     margin-top: 1.5rem;
 }
- ol>li {
+ ul>li {
     list-style: square;
     color: black;
-    margin-left: -2rem;
     font-size: 15px;
     font-weight: 500;
     font-family: monospace;
@@ -217,9 +220,275 @@ ol {
     display: flex;
     justify-content:space-evenly;
     align-items: center;
-    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 .benefitsImg {
     width: 20rem;
     border-radius: 10px;
+}
+/* raffle style */
+form {
+    border: 3px solid #e6da76;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 10px;
+    font: message-box;
+}
+.divRaffle {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.divPay {    
+    display: flex;
+    flex-direction: column; 
+    align-items: baseline;
+}
+.labelPay {
+    
+    direction: rtl;    
+}
+.divIframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+iframe {
+    border-radius: 10px;
+}
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+header {
+    display: flex;
+    flex-direction: column-reverse;
+    position:static;
+}
+nav { 
+    display: flex;
+    flex-direction: column;
+}
+  /* homeStyle */
+.imgHome {
+    width: 40rem;
+    height: 20rem;
+}
+.sectionHome2 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+}
+.imgHome2 {
+    margin-bottom: 1.5rem;
+}
+  /* aboutUsStyle */
+.articleAbout {
+    display: flex;
+    flex-direction: column;
+}
+.aboutImg , .aboutImg1{
+    margin-bottom: 1.5rem;
+}
+  /* contact */
+.contactImg {
+    width: 40rem;
+}
+    
+.divContact { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.articleContact  {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.divPrueba {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15%;
+}
+  /* informationStyle */
+table { 
+    width: 30rem;
+}
+  /* benefitsTipsStyle */
+
+.benefitsDiv {
+    display: flex;
+    flex-direction: column;
+}  
+.benefitsImg {
+    width: 30rem;
+}
+  /* raffleStyle */
+
+.divRaffle { 
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.divPay {
+    display: flex;
+    align-items: center;
+}  
+form {
+    width: 40rem;
+    margin-bottom: 1rem;
+}
+label {
+    display: flex;
+    justify-content: center;
+}
+.labelPay {
+    display: flex;
+    align-items: center;
+}
+.divTerm {
+    display: flex;
+    flex-direction: column;
+}   
+iframe {
+    width: 30rem;
+    height: 15rem;
+}
+}
+
+@media only screen  and (max-width:767px) {
+
+header {
+        display: flex;
+        flex-direction: column-reverse;
+        position:static;
+}
+nav { 
+        display: flex;
+        flex-direction: column;
+}
+nav>a {
+    font-size: 1rem;
+}
+.logoImg {
+    height: 1,5rem;
+}
+.divTitles { 
+    
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+h3 {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    width: 17rem;
+}
+  /* homeStyle */
+  .imgHome {
+    width: 20rem;
+    height: 12rem;
+}
+.sectionHome2 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+}
+.imgHome2 {
+    margin-bottom: 1.5rem;
+    width: 18rem;
+}
+.textHome {
+    width: 18rem;
+}
+/* aboutUsStyle */
+.articleAbout {
+    display: flex;
+    flex-direction: column;
+}
+.aboutImg , .aboutImg1{
+    margin-bottom: 1.5rem;
+    width: 18rem;
+}
+.aboutText {
+    width: 18rem;
+}
+ /* contact */
+ .contactImg {
+    width: 18rem;
+}
+h4 {
+    width: 18rem;
+}
+    
+.divContact { 
+    display: flex;
+    flex-direction: column;
+}
+.articleContact  {
+    display: flex;
+    justify-content: center;
+   
+}
+.divPrueba {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+  /* informationStyle */
+  table ,tr,th { 
+    width: 20rem;
+    height: 10rem;
+}
+ /* benefitsTipsStyle */
+
+ .benefitsDiv {
+    display: flex;
+    flex-direction: column;
+}  
+.benefitsImg {
+    width: 18rem;
+}
+ol>li {
+    width: 15rem;
+}
+  /* raffleStyle */
+
+  .divRaffle { 
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.divPay {
+    display: flex;
+    align-items: center;
+}  
+form {
+    width: 20rem;
+    margin-bottom: 1rem;
+}
+label {
+    display: flex;
+    justify-content: center;
+}
+.labelPay {
+    display: flex;
+    align-items: center;
+}
+.divTerm {
+    display: flex;
+    flex-direction: column;
+}   
+iframe {
+    width: 20rem;
+    height: 10rem;
+}
 }
